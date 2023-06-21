@@ -1,0 +1,133 @@
+* {
+    margin:0;
+    padding: 1%;
+    background-color: rgb(253, 255, 250);
+}
+
+header {
+    font-size: large;
+    font-family: 'Courier New', Courier, monospace;
+    justify-content: center;
+    text-align: center;
+    margin: 10px;
+    padding: 5%;
+    width: 100%;
+}
+
+h1, h2, h3, h4 {
+    color: rgb(0, 10, 10);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+section {
+    font-family: 'Courier New', Courier, monospace;
+    justify-content: center;
+    top: auto;
+    width: 100%;
+}
+
+#bio {
+    height: 30%;
+    width: 100%;
+}
+
+.items-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.item {
+    text-decoration: none;
+    color: black;
+    background-color: bisque;
+    margin: 1%;
+    padding: 1%;
+    width: 50%;
+    text-align: center;
+    border: 1px solid black;
+}
+
+.item:hover {
+    background-color: black;
+    color: bisque;
+}
+
+nav, 
+nav ul,
+nav li, 
+nav a {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    width: 100%;
+    text-align: center;   
+}
+
+nav {
+    background-color: black;
+    border: 1px solid black;  
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+nav li {
+    position: relative;
+    text-align: center;
+}
+
+nav a {
+    display: block;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: black;
+    background-color: bisque;
+    width: 100%;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+nav ul ul {
+    position: absolute;
+    top: 100%;
+    background-color: bisque;
+    width: 100%;
+    display: none;
+}
+
+
+nav ul li:hover > ul {
+    display: block;
+    width: 100%;
+}
+
+nav ul ul li {
+    width: 100%;
+    
+}
+
+nav ul ul li:hover {
+    width: 100%;
+}
+nav ul ul a {
+    color: black;
+    border: 1px solid black;
+}
+
+nav a:hover {
+    background-color: black;
+    color: antiquewhite;
+}
+
+nav a.active {
+    background-color: #999;
+    color: #fff;
+}
